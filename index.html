@@ -1,0 +1,50 @@
+<!-- Manogna Namburu
+mnamburu@ucsc.edu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    </canvas>
+    <br><br> 
+    <p id="numdot">XXX</p>
+    <p>
+    <p>
+    <button type = "button" id = "NormalOn">NormalOn</button>
+    <button type = "button" id = "NormalOff">NormalOff</button>
+    </p>
+    <p>
+      <button type = "button" id = "LightOn">LightOn</button>
+      <button type = "button" id = "LightOff">LightOff</button>
+    </p>
+    
+    Camera Angle<input type="range" min="-360" max="360" value="0" class="slider" id="Angle"/>
+    <p>
+      Light X <input type ="range" min="-250" max="250" value="0" class="slider" id="Xlight">
+      Light Y <input type ="range" min="-250" max="250" value="100" class="slider" id="Ylight">
+      Light Z <input type ="range" min="-250" max="250" value="-200" class="slider" id="Zlight">
+    </p>
+  </p>
+  Color Change<input type="range" min="-360" max="360" value="0" class="slider" id="Color"/>
+  <p>
+
+
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Oval.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="world.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    
+  </body>
+</html>
